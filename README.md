@@ -6,7 +6,7 @@
 
 ## [Our project ppt link](https://docs.google.com/presentation/d/1t6E2uwihGzrW38J-WkKgBwJbH6NgZnr2mXZF1ACuqQg/edit?usp=sharing)
 
-## [Our project demo video](https://drive.google.com/file/d/1a_2ZnheoLdqC6VzLWB9kUY-VLHnyA6mc/view?usp=sharing)
+## [Our project demo video](https://drive.google.com/file/d/1frlROp-JCGtKX1JG342kPnhYZ8tfVt4Y/view?usp=sharing)
 
 Strategy +Business is a User friendly Visualization Dashboard for analyzing the Sentiments and Emotions during covid19 on twitter.We can search for a hashtag, many hashtags together,or any of one of the hashtags mentioned by the user.
 The project fetched data from Twitter using Tweepy and analysed it using Vader Sentiment Analyser.
