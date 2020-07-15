@@ -20,6 +20,7 @@ Sentiment analysis of the tweets involves the following steps:
 ***
 We have used Getoldtweets3 to fetch historic tweets to compare sentiments of people before covid so that we understand the changing demand and inclination for products better.
 ## How to make run in local server:
+- fetch your secret keys from official twitter api and fill it in views.py
 - Pip install requirements.txt
 - Get your access tokens from twitters official api.
 - Run python manage .py runserver
