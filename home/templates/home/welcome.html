@@ -1,0 +1,90 @@
+{%  extends 'base.html' %}
+{% block content %}
+
+<!--{% load plotly_dash %}-->
+<div class="container-fluid">
+<h1 class="h3 mb-0 text-gray-800" style="font-size: 30px;">Dashboard</h1>
+    <br>
+<h2 style="font-size: 27px; color: #1DA1F2;">Sentiment Analysis Of {{request.POST.hashphrase.capitalize}} Tweets:</h2>
+
+<!--    <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">-->
+<!--    {% plotly_app name='SimpleExample' ratio=0.45 %}-->
+<!--    </div>-->
+<br>
+<p>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+        <div>{{ curr | safe }}</div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+        <div>{{ old | safe }}</div>
+    </div>
+  </div>
+</div>
+</p>
+
+
+<p>
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+        <div>{{ plot2 | safe }}</div>
+    </div>
+  </div>
+    <div class="col-sm-6">
+    <div class="card">
+        <div>{{ plot3 | safe }}</div>
+    </div>
+    </div>
+</div>
+</p>
+
+<!--wordcloud-->
+
+<p>
+<div class="card-deck">
+  <div class="card">
+    <h2 style="text-align: center; padding: 20px;">Most Popular Positive Words</h2>
+    <img class="card-img-top" src="{{ pos }}" alt="Card image cap">
+  </div>
+  <div class="card">
+    <h2 style="text-align: center; padding: 20px;">Most Popular Negative Words</h2>
+    <img class="card-img-top" src="{{ neg }}" alt="Card image cap">
+  </div>
+</div>
+</p>
+
+
+
+
+<!--positive and negative tweets-->
+
+<p>
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+        <ul class="list-group">
+            <h2 style="text-align: center; padding: 20px;">Top Positive Tweets</h2>
+        {% for i in positive %}
+            <li class="list-group-item list-group-item-primary">{{i}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+  </div>
+    <div class="col-sm-6">
+    <div class="card">
+        <ul class="list-group">
+            <h2 style="text-align: center; padding: 20px;">Top Negative Tweets</h2>
+        {% for i in negative %}
+                <li class="list-group-item list-group-item-danger">{{i}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    </div>
+</div>
+</p>
+</div>
+{% endblock %}
