@@ -1,6 +1,6 @@
 
 # SBSPS-Challenge-721-strategy-Business
-## [Our Project link](https://analyticinsights.herokuapp.com)
+## [Our Project link](https://twitterinsights.herokuapp.com)
 
 ## [Our project report link](https://workdrive.zohoexternal.com/writer/open/kv7q4cb263d0785f24cffbfed929c02e9a2cb?authId=%7B%22linkId%22%3A%225k2wAp9IdzW-LYmlU%22%7D)
 
